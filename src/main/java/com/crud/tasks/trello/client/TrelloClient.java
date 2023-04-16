@@ -9,6 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -44,4 +45,16 @@ public class TrelloClient {
                         .map(Arrays::asList)
                         .orElse(Collections.emptyList());
     }
+
+    public List<TrelloBoardDto> trelloFilteredList() {
+        return getTrelloBoards().stream()
+                .filter(fill -> fill.getName() != null)
+                .filter(fill -> fill.getId() != null)
+                .filter(fill -> fill.getName().contains("Kodilla"))
+                .collect(Collectors.toList());
+
+    }
+
 }
+
+
