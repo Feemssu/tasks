@@ -1,0 +1,29 @@
+ public List<TrelloBoardDto> trelloFilteredList() {
+//        return getTrelloBoards().stream()
+//                .filter(fill -> fill.getName() != null)
+//                .filter(fill -> fill.getId() != null)
+//                .filter(fill -> fill.getName().contains("Kodilla"))
+//                .collect(Collectors.toList());
+//
+//    }
+
+
+
+//    private URI urlBuild() {
+//        URI url = UriComponentsBuilder.fromHttpUrl(trelloApiEndpoint + "/members/"+ trelloUsername + "/boards")
+//                .queryParam("key",trelloAppKey)
+//                .queryParam("token",trelloToken)
+//                .queryParam("fields","name,id")
+//                .queryParam("lists","all")
+//                .build()
+//                .encode()
+//                .toUri();
+//        return url;
+//    }
+//
+//    public List<TrelloBoardDto> getTrelloBoards() {
+//                TrelloBoardDto[] boardsResponse = restTemplate.getForObject(urlBuild(), TrelloBoardDto[].class);
+//                return Optional.ofNullable(boardsResponse)
+//                        .map(Arrays::asList)
+//                        .orElse(Collections.emptyList());
+//    }
