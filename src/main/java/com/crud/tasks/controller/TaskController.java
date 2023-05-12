@@ -10,8 +10,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@CrossOrigin("*")
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/v1/tasks")
 public class TaskController {
 
     private final DbService service;
