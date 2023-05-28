@@ -23,6 +23,8 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.15'
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	testImplementation 'com.google.code.gson:gson:2.10.1'
+	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
+
 }
 
 tasks.named('test') {
